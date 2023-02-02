@@ -321,17 +321,6 @@
 
     const triggers = document.querySelectorAll('.smoothscroll')
 
-    const loadMore = function () {
-      $('.blogBox').slice(0, 4).show()
-      $('#loadMore').on('click', function (e) {
-        e.preventDefault()
-        $('.blogBox:hidden').slice(0, 4).slideDown()
-        if ($('.blogBox:hidden').length == 0) {
-          $('#loadMore').text('No Content').addClass('noContent')
-        }
-      })
-    }
-
     const moveTo = new MoveTo(
       {
         tolerance: 0,
@@ -356,6 +345,5 @@
     ssMailChimpForm()
     ssAlertBoxes()
     ssMoveTo()
-    loadMore()
   })()
 })(document.documentElement)
