@@ -4856,19 +4856,26 @@ td:last-child {
   margin: 4px;
 }
 
-#load-more {
-  margin-top: 20px;
-  display: inline-block;
-  padding: 13px 30px;
-  border: 1px solid #334;
-  color: #334;
-  font-size: 16px;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-#load-more:hover {
-  background-color: crimson;
-  border-color: crimson;
+#loadMore {
+  width: 200px;
   color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: blue;
+  transition: 0.3s;
+}
+#loadMore:hover {
+  color: blue;
+  background-color: #fff;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
 }
